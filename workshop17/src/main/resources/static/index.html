@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <form method="get" action="/weather">
+        <p>City :</p>
+        <input type="text" name="city" id="city" required />
+        <label for="units">Choose a unit:</label>
+        <select name="units" id="units">
+          <option value="metric">Metric</option>
+          <option value="imperial">Imperial</option>
+          <option value="standard">Standard</option>
+        </select>
+        <button type="submit">Get Weather</button>
+      </form>
+    </div>
+  </body>
+</html>
